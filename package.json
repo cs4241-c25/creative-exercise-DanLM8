@@ -1,0 +1,16 @@
+{
+  "name": "cs4241-creative-assignment",
+  "version": "0.1.0",
+  "description": "WPI CS4241-creative-assignment",
+  "author": "",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mime": "^2.4.4"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

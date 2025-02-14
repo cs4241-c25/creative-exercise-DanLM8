@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CS4241 Creative Assignment</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <canvas id="myCanvas" width="150" height="75" style="border:1px solid black;">
+    </canvas>
+    
+    <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    const grad=ctx.createLinearGradient(0,0, 150,0);
+    grad.addColorStop(0, "lightcoral");
+    grad.addColorStop(1, "darkblue");
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 150, 75);
+    </script>
+
+<canvas id="myCanvas2" width="500" height="150" style="border:1px solid black;">
+</canvas>
+    <script>
+        const canvas2 = document.getElementById("myCanvas2");
+        const ctx2 = canvas2.getContext("2d");
+        ctx2.strokeStyle = "blue"; 
+        ctx2.font = "50px Arial";
+        ctx2.strokeText("Check out my song:",0,50);
+
+        ctx2.beginPath();
+        ctx2.arc(250, 100, 40, 0, Math.PI * 2); // (x, y, radius, startAngle, endAngle)
+        ctx2.fillStyle = "red";
+        ctx2.fill();
+        ctx2.closePath();
+    </script>
+<audio controls>
+    <source src="MySong.mp3" type="audio/mpeg">
+</audio>
+</body> 
+</html>
